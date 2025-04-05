@@ -19,7 +19,7 @@ def busca(mapa, posicao, chegada):
         ny = y + dy
         
         if nx < 0 or ny < 0 or nx >= len(mapa) or ny >= len(mapa[0]):
-            return 
+            continue 
         
         if mapa[nx][ny] == 0:  
             mapa[nx][ny] += 1  
